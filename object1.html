@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <p id="demo3"></p>
+            <script>
+                number= 7
+                name2= "bishant"
+                document.getElementById("demo1").innerHTML = number + name2  //we can add number and string too(concatinate)
+
+                document.getElementById("demo1").innerHTML = name2 + "roll number is" + number //this is wrong, it only applies in dictionary 
+                
+
+                doggy = {height : "short" , name : "pasta" , clz : "kec" }
+                document.getElementById("demo").innerHTML = doggy.clz; 
+                var x="this is \"me\"" //if you want to quote a word inside a sentence use '' or \"\"
+                
+                document.getElementById("demo3").innerHTML = x
+            </script>
+        </body> 
+    </head>
+</html>

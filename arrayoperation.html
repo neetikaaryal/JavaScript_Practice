@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>MATHEMATICS</title>
+</head>
+<body>
+    <h1> <u>math is not hard </u> </h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+        var x = [1,2,3,4,"g","ha"]
+        var y =["a","b","c"]
+        x.pop()
+        document.getElementById("demo").innerHTML = x //last element is removed
+        x.shift()
+        document.getElementById("demo1").innerHTML = x //1st element is removed
+        x.push("neetika")
+        document.getElementById("demo2").innerHTML = x //to add element at the end
+        x.unshift("neetika")
+        document.getElementById("demo3").innerHTML = x //to add element at beginning
+        x[0] = "hello"
+        document.getElementById("demo4").innerHTML = x
+        delete x[3]
+        document.getElementById("demo5").innerHTML = x
+        x.splice(2,0,"hi","yo") //adds elements after 1st  index
+        document.getElementById("demo6").innerHTML = x
+
+        z= x.concat(y)  //joins two lists
+        document.getElementById("demo7").innerHTML = z
+
+
+/* similarly if we want to sort an array alphabetically use x.sort() 
+   if we want to reverse sort the array use x.reverse() m*/
+    </script>
+</body>
+</html>
